@@ -42,6 +42,7 @@ const App = () => {
       <div className="py-4 w-auto overflow-auto px-6 max-w-3xl m-auto">
         <Suspense fallback={<Loading />}>{renderActiveComponent()}</Suspense>
       </div>
+      <p>Made by Harsh with ❤️</p>
     </div>
   );
 };
