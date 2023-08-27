@@ -39,7 +39,7 @@ const App = () => {
   return (
     <div className="flex flex-col items-center min-h-screen py-5">
       <Navbar setActiveComponent={setActiveComponent} />
-      <div className="py-4 px-6 max-w-3xl m-auto">
+      <div className="py-4 w-auto overflow-auto px-6 max-w-3xl m-auto">
         <Suspense fallback={<Loading />}>{renderActiveComponent()}</Suspense>
       </div>
     </div>
