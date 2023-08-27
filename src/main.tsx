@@ -37,17 +37,12 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen">
-      <Suspense fallback={<Loading/>}>
-        <Navbar setActiveComponent={setActiveComponent} />
-      </Suspense>
-      <main className="py-4 px-6">
-        <Suspense fallback={<Loading/>}>
-          {renderActiveComponent()}
-        </Suspense>
-      </main>
+    <div className="flex flex-col items-center min-h-screen py-5">
+      <Navbar setActiveComponent={setActiveComponent} />
+      <div className="py-4 px-6 max-w-3xl m-auto">
+        <Suspense fallback={<Loading />}>{renderActiveComponent()}</Suspense>
+      </div>
     </div>
   );
 };
-
-render(<App />, document.body!);
+render(<App />, document.body);

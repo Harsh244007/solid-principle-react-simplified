@@ -1,11 +1,12 @@
 import { memo } from "preact/compat";
+import NAVBARJSON from "../../Configs/JSON/Navbar.json";
 
 const SolidPrinciple2 = () => {
     return (
-      <div>
-        <h2>SolidPrinciple2</h2>
+      <>
+        <h2>{NAVBARJSON[2]}</h2>
     c,vmkbcv
-      </div>
+      </>
     );
   };
   

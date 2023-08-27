@@ -16,7 +16,7 @@ const SolidPrinciple5 = lazy(
   () => import("./Solid-Principles/SolidPrinciple5")
 );
 const Home = lazy(() => import("./Home"));
-const Navbar = lazy(() => import("./Navbar/Navbar"));
+import Navbar from "./Navbar/Navbar";
 import Loading from "./Common/Loading";
 export {
   ReactKeys,
