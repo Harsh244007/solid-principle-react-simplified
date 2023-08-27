@@ -7,7 +7,8 @@ const ReactKeys = () => {
       <div className="flex flex-col gap-3">
         <p>Let's explore a potential issue in the following code:</p>
         <p>We have a simple counter app that adds count to a name.</p>
-        <pre className="p-2 rounded">
+        <div className="overflow-scroll">
+          <pre className="p-2 rounded">
           {`import React, { useState } from 'react';`}
           <br />
           {`import Counter from './Counter';`}
@@ -44,6 +45,7 @@ const ReactKeys = () => {
           <br />
           {`}`}
         </pre>
+          </div>
         <p>
           In this app, when you increase the count for "Harsh" and then toggle
           to "Patel," you will notice that the count remains the same for First example below.
