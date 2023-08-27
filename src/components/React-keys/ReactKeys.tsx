@@ -7,8 +7,7 @@ const ReactKeys = () => {
       <div className="flex flex-col gap-3">
         <p>Let's explore a potential issue in the following code:</p>
         <p>We have a simple counter app that adds count to a name.</p>
-        <p>
-          <br />
+        <pre className="p-2 rounded">
           {`import React, { useState } from 'react';`}
           <br />
           {`import Counter from './Counter';`}
@@ -16,31 +15,35 @@ const ReactKeys = () => {
           <br />
           {`export default function App() {`}
           <br />
-          {`const [isHarsh, setIsHarsh] = useState(true);`}
+          {`  const [isHarsh, setIsHarsh] = useState(true);`}
           <br />
           <br />
-          {`return (`}
+          {`  return (`}
           <br />
-          {`<div>`}
+          {`    <div>`}
           <br />
-          {`{isHarsh ? (  <Counter name="Harsh" />) : ( <Counter name="Patel" />`}
+          {`      {isHarsh ? (`}
           <br />
-          {` )}`}
+          {`        <Counter name="Harsh" />`}
           <br />
-          {` <button onClick={() => setIsHarsh((prevIsHarsh) => !prevIsHarsh)}>`}
+          {`      ) : (`}
           <br />
-          {` Toggle`}
+          {`        <Counter name="Patel" />`}
           <br />
-          {`</button>`}
+          {`      )}`}
           <br />
-          {`</div>`}
+          {`      <button onClick={() => setIsHarsh((prevIsHarsh) => !prevIsHarsh)}>`}
           <br />
-          {`);`}
+          {`        Toggle`}
+          <br />
+          {`      </button>`}
+          <br />
+          {`    </div>`}
+          <br />
+          {`  );`}
           <br />
           {`}`}
-          <br />
-          {``}
-        </p>
+        </pre>
         <p>
           In this app, when you increase the count for "Harsh" and then toggle
           to "Patel," you will notice that the count remains the same for First example below.
