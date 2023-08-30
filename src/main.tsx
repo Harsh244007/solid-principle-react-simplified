@@ -19,17 +19,17 @@ const App = () => {
 
   const renderActiveComponent = () => {
     switch (activeComponent) {
-      case 1:
-        return <ReactKeys />;
       case 2:
-        return <SolidPrinciple1 />;
+        return <ReactKeys />;
       case 3:
-        return <SolidPrinciple2 />;
+        return <SolidPrinciple1 />;
       case 4:
-        return <SolidPrinciple3 />;
+        return <SolidPrinciple2 />;
       case 5:
-        return <SolidPrinciple4 />;
+        return <SolidPrinciple3 />;
       case 6:
+        return <SolidPrinciple4 />;
+      case 7:
         return <SolidPrinciple5 />;
       default:
         return <Home />;

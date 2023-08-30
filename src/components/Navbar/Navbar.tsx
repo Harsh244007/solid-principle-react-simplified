@@ -21,7 +21,7 @@ const Navbar = ({ setActiveComponent }: NavbarProps) => {
     );
   };
   return (
-    <nav className="flex  max-w-3xl m-auto gap-2 flex-wrap justify-around  py-3 px-3">
+    <nav className="flex  max-w-3xl gap-2 flex-wrap justify-around  py-3 px-3">
       {NAVBARJSON.map((name: string, i: number) => (
         <NavbarButton name={name} number={i} />
       ))}
