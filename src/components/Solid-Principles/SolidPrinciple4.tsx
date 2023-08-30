@@ -4,7 +4,7 @@ import NAVBARJSON from "../../Configs/JSON/Navbar.json";
 const SolidPrinciple4 = () => {
   return (
     <>
-      <h2 className="text-2xl font-bold mb-4">{NAVBARJSON[4]}</h2>
+      <h2 className="text-2xl font-bold mb-4">{NAVBARJSON[5]}</h2>
       <div className="flex flex-col gap-3">
         <p>
           The <strong>Interface Segregation Principle (ISP)</strong> is one of the SOLID principles in software design. It states that a client should not be forced to implement interfaces it does not use.

@@ -4,7 +4,7 @@ import NAVBARJSON from "../../Configs/JSON/Navbar.json";
 const SolidPrinciple3 = () => {
   return (
     <>
-      <h2 className="text-2xl font-bold mb-4">{NAVBARJSON[3]}</h2>
+      <h2 className="text-2xl font-bold mb-4">{NAVBARJSON[4]}</h2>
       <div className="flex flex-col gap-3">
         <p>
           The <strong>Liskov Substitution Principle (LSP)</strong> is one of the SOLID principles in software design. It states that objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program.

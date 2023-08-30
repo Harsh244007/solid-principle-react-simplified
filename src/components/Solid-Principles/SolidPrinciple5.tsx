@@ -4,7 +4,7 @@ import NAVBARJSON from "../../Configs/JSON/Navbar.json";
 const SolidPrinciple5 = () => {
   return (
     <>
-      <h2 className="text-2xl font-bold mb-4">{NAVBARJSON[5]}</h2>
+      <h2 className="text-2xl font-bold mb-4">{NAVBARJSON[6]}</h2>
       <div className="flex flex-col gap-3">
         <p>
           The <strong>Dependency Inversion Principle (DIP)</strong> is one of the SOLID principles in software design. It states that high-level modules should not depend on low-level modules; both should depend on abstractions. Furthermore, abstractions should not depend on details; details should depend on abstractions.

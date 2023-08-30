@@ -4,7 +4,7 @@ import NAVBARJSON from "../../Configs/JSON/Navbar.json";
 const SolidPrinciple1 = () => {
   return (
     <>
-      <h2 className="text-2xl font-bold mb-4">{NAVBARJSON[1]}</h2>
+      <h2 className="text-2xl font-bold mb-4">{NAVBARJSON[2]}</h2>
       <div className="mb-4">
         <p>
           The <strong>Single Responsibility Principle (SRP)</strong> is one of
