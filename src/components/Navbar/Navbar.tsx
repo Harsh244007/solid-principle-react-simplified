@@ -13,7 +13,7 @@ const Navbar = ({ setActiveComponent }: NavbarProps) => {
   const NavbarButton = ({ name, number }: NavBarButton) => {
     return (
       <button
-        onClick={() => setActiveComponent(number + 1)}
+        onClick={() => setActiveComponent(number)}
         className="nav-button"
       >
         {name}
